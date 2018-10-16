@@ -22,11 +22,11 @@ message BatchCommandsRequest {
     repeated uint64 request_ids = 2;
     
     message Request {
-	oneof cmd {
-	    GetRequest Get = 1;
-	    ScanRequest Scan = 2;
-	    // ... more other requests.
-	}
+        oneof cmd {
+            GetRequest Get = 1;
+            ScanRequest Scan = 2;
+            // ... more other requests.
+        }
     }
 }
 
@@ -40,8 +40,8 @@ message BatchCommandsResponse {
         oneof cmd {
             GetResponse Get = 1;
             ScanResponse Scan = 2;
-	    // ... more other responses respectively.
-	}
+            // ... more other responses respectively.
+        }
     }
 }
 ```
